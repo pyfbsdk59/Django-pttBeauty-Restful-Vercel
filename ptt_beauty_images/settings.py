@@ -61,13 +61,16 @@ TEMPLATES = [
 WSGI_APPLICATION = 'ptt_beauty_images.wsgi.application'
 
 
-
+# Database
+# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+# Note: Django modules for using databases are not support in serverless
+# environments like Vercel. You can use a database over HTTP, hosted elsewhere.
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'soellyll', #your elephantSQL DB name
-        'USER': 'soellyll', #your elephantSQL DB user name
-        'PASSWORD': 'neQ0WWSVyf6Oejwa3mm3PG3ZeWAeY6ia', #your elephantSQL DB pw
+        'NAME': '', #your elephantSQL DB name
+        'USER': '', #your elephantSQL DB user name
+        'PASSWORD': '', #your elephantSQL DB pw
         'HOST': 'tai.db.elephantsql.com',
         'PORT': 5432,  
     }
